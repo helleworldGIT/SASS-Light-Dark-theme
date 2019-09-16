@@ -8,7 +8,7 @@ Depending in which one you use, the color variables will change to display a 'Li
 
 ## The @if directive in SASS
 
-You an use this directive for any purpose you have in mind. I used it to build this easy-and-fast project of a Dark/Light theme. It usually depends in the value of a variable. It is **a must** to define the allowed values of the variables you'll be using in the @if directive condition.
+You can use this directive for any purpose you have in mind. I used it to build this easy-and-fast project of a Dark/Light theme. It usually depends in the value of a variable. It is **a must** to define the allowed values of the variables you'll be using in the @if directive condition.
 
 >For example, as I defined it in my project:
 ```scss
