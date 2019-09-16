@@ -1,0 +1,96 @@
+// Main elements
+*{
+    padding: 0;
+    margin: 0;
+}
+// STICKY FOOTER
+.container {
+    min-height: calc(80vh - 70px);
+    //Responsive
+    @include m-screen{
+        min-height: calc(40vh - 70px);
+    }
+    @include s-screen{
+        min-height: calc(40vh - 70px);
+    }
+    @include xs-screen{
+        min-height: calc(30vh - 70px);
+    }
+  }
+.footer {
+    height: 50px;
+}
+
+// Main mixins
+@mixin menu_items{
+    ul{
+        width: 50%;
+        margin: auto;
+        text-align: center;
+        padding: 15px;
+        font-size: 16px;
+        font-family: $sans-serif-Manjari;
+        li{
+            display: inline-block;
+            padding: 6px;
+            border-bottom: 2px solid transparent;
+            &:hover{
+                font-weight: bold;
+                transform: translateY(-5px);
+                transition: 0.2s;
+                border-radius: 6px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+@mixin container_style{
+    width: 80%;
+    margin: auto;
+    margin-top: 25px;
+    border-radius: 6px;
+    p{
+        text-align: center;
+        font-family: $serif-Merriweather;
+        padding-top: 20%;
+        font-size: 26px;
+        span{
+            display: block;
+            font-size: 20px;
+            text-shadow: none;
+            font-family: $sans-serif-Manjari;
+            font-weight: bold;
+            @include s-screen{
+                font-size: 16px;
+                width: 80%;
+                margin: auto;
+            }
+            @include xs-screen{
+                font-size: 12px;
+                width: 80%;
+                margin: auto;
+            }
+        }
+        //Responsive
+        @include xs-screen{
+            padding-top: 15px;
+            font-size: 14px;
+        }
+        @include m-screen{
+            padding-top: 35px;
+        }
+    }
+}
+@mixin footer_style{
+    font-family: $sans-serif-Manjari;
+    font-size: 20px;
+    text-align: center;
+    padding: 15px;
+    //Responsive
+    @include xs-screen{
+        p{
+            font-size: 16px;
+            text-shadow: 0px 0px transparent !important;
+        }
+    }
+}

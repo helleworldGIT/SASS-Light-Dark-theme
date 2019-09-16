@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Manjari&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  min-height: calc(80vh - 70px);
+}
+@media only screen and (max-width: 1200px) {
+  .container {
+    min-height: calc(40vh - 70px);
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .container {
+    min-height: calc(40vh - 70px);
+  }
+}
+@media only screen and (max-width: 480px) {
+  .container {
+    min-height: calc(30vh - 70px);
+  }
+}
+
+.footer {
+  height: 50px;
+}
+
+.menu ul {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  padding: 15px;
+  font-size: 16px;
+  font-family: "Manjari", sans-serif;
+}
+.menu ul li {
+  display: inline-block;
+  padding: 6px;
+  border-bottom: 2px solid transparent;
+}
+.menu ul li:hover {
+  font-weight: bold;
+  transform: translateY(-5px);
+  transition: 0.2s;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  margin-top: 25px;
+  border-radius: 6px;
+}
+.container p {
+  text-align: center;
+  font-family: "Merriweather", serif;
+  padding-top: 20%;
+  font-size: 26px;
+}
+.container p span {
+  display: block;
+  font-size: 20px;
+  text-shadow: none;
+  font-family: "Manjari", sans-serif;
+  font-weight: bold;
+}
+@media only screen and (max-width: 1024px) {
+  .container p span {
+    font-size: 16px;
+    width: 80%;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .container p span {
+    font-size: 12px;
+    width: 80%;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .container p {
+    padding-top: 15px;
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .container p {
+    padding-top: 35px;
+  }
+}
+
+.footer {
+  font-family: "Manjari", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  padding: 15px;
+}
+@media only screen and (max-width: 480px) {
+  .footer p {
+    font-size: 16px;
+    text-shadow: 0px 0px transparent !important;
+  }
+}
+
+html, body {
+  background-color: #fcf9ea;
+}
+
+.menu ul {
+  border-bottom: 2px dotted #ffc5a1;
+}
+.menu ul li {
+  color: #52de97;
+}
+.menu ul li:hover {
+  background-color: #52de97;
+  color: #ffc5a1;
+  border-bottom: 2px solid #badfdb;
+}
+
+.container {
+  background-color: #badfdb;
+  box-shadow: 1px 2px #ffc5a1;
+}
+.container p {
+  text-shadow: 2px 1px #ffc5a1;
+  color: #52de97;
+}
+.container p span {
+  color: #52de97;
+  text-shadow: 2px 1px #ffc5a1;
+}
+
+.footer p {
+  color: #52de97;
+  text-shadow: 1px 1px #f8a978;
+}
+
+/*# sourceMappingURL=main.css.map */

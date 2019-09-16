@@ -1,0 +1,89 @@
+// == IMPORTING ==
+@import "fonts", "responsive", "palette", "mixins";
+// == IMPORTING ==
+
+// Theme variable. Accepted values: 'dark', 'light'. Light by default.
+$theme: light;
+
+// == STYLES ==
+.menu{
+    @include menu_items;
+}
+.container{
+    @include container_style;
+}
+.footer{
+    @include footer_style;
+}
+// == STYLES ==
+
+// Light Theme
+@if $theme == light {
+    html, body {
+        background-color: $lightwhite;
+    }
+    .menu{
+        ul{
+            border-bottom: 2px dotted $lightorange;
+            li{ 
+                color: $lightgreen;
+                &:hover{
+                    background-color: $lightgreen;
+                    color: $lightorange;
+                    border-bottom: 2px solid $lightblue;
+                }
+            }
+        }
+    }
+    .container{
+        background-color: $lightblue;
+        box-shadow: 1px 2px $lightorange;
+        p{
+            text-shadow: 2px 1px $lightorange;
+            color: $lightgreen;
+            span{
+                color: $lightgreen;
+                text-shadow: 2px 1px $lightorange;
+            }
+        }
+    }
+    .footer{
+        p{
+            color: $lightgreen;
+            text-shadow: 1px 1px $medorange;
+        }
+    }
+}
+//Dark theme
+@if $theme == dark {
+    html, body {
+        background-color: $obscurepurple;
+    }
+    .menu{
+        ul{
+            border-bottom: 2px solid $lightpurple;
+            li{ 
+                color: $medpurple;
+                &:hover{
+                    background-color: $lightpurple;
+                    color: $darkpurple;
+                    border-bottom: 2px solid $medpurple;
+                }
+            }
+        }
+    }
+    .container{
+        background-color: $lightpurple;
+        box-shadow: 1px 2px $medpurple;
+        p{
+            text-shadow: 2px 1px $medpurple;
+            color: $darkpurple;
+        }
+    }
+    .footer{
+        p{
+            color: $medpurple;
+            text-shadow: 1px 1px $lightpurple;
+        }
+    }
+}
