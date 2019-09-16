@@ -13,6 +13,12 @@ now SASS will be looking for changes!
 Inside the main.scss file you will find a key variable named "$theme". This variable only allows 2 values: dark, light.
 Depending in which one you use, the color variables will change to display a 'Light mode' or a 'Dark mode'.
 
+## How it is structured
+
+This project has 2 level-design-styles as I call them. First level include positions, fonts, font-sizes, etc., every style that doesn't need a color variable. These styles are global and inside mixins.
+
+Second level design styles involve only color variables and they are the key why Light/Dark mode work.
+
 ## The @if directive in SASS
 
 You can use this directive for any purpose you have in mind. I used it to build this easy-and-fast project of a Dark/Light theme. It usually depends in the value of a variable. It is **a must** to define the allowed values of the variables you'll be using in the @if directive condition.
