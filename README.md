@@ -3,7 +3,7 @@ This is an example of how to create a Light/Dark theme project in SASS using @if
 
 ## How it works
 
-First of all use your console inside the project. Type
+First of all use your console inside the 'css' folder in the project. Type
 ```
 sass main.scss:main.css --watch
 ```
