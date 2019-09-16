@@ -3,6 +3,13 @@ This is an example of how to create a Light/Dark theme project in SASS using @if
 
 ## How it works
 
+First of all use your console inside the project. Type
+```
+sass main.scss:main.css --watch
+```
+
+now SASS will be looking for changes!
+
 Inside the main.scss file you will find a key variable named "$theme". This variable only allows 2 values: dark, light.
 Depending in which one you use, the color variables will change to display a 'Light mode' or a 'Dark mode'.
 
